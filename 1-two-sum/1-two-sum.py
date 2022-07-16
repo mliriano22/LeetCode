@@ -7,7 +7,7 @@ class Solution(object):
         """
         
         # this solution uses slicing instead of data mapping 
-        # data mapping like a dictionary would probably be better to avoid future errors but this was just for experimenation
+        # data mapping like a dictionary would probably be better to avoid future errors but this was just for experimentation
         
         l=[]
 
