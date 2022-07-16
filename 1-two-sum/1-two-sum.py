@@ -7,7 +7,7 @@ class Solution(object):
         """
         
         # this solution uses slicing instead of data mapping 
-        # data mapping like a dictionary would probably be better to avoid future errors but this was just for experimentation
+        # data mapping like a dictionary would probably be better to avoid errors but this was just for experimentation
         
         l=[]
 
@@ -16,7 +16,7 @@ class Solution(object):
             
             x= target- nums[i]
             
-            if x in nums: #this if statement counts x
+            if x in nums:
                 
                 count=nums.count(x)
                 
@@ -25,7 +25,7 @@ class Solution(object):
                     
                 else:
                     
-                    l.append(i) #adds to the list we created to hold the indices
+                    l.append(i) #adds to the list we created intially to hold the indices
                     
         return l #returns our list of indices
     
