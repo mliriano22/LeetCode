@@ -17,12 +17,12 @@ class Solution(object):
         while list1 and list2:
             if list1.val < list2.val:
 
-                m.next=ListNode(list1.val)
+                m.next=list1
                 list1=list1.next
 
             else:
 
-                m.next=ListNode(list2.val)
+                m.next=list2
                 list2=list2.next
                 
             m=m.next
