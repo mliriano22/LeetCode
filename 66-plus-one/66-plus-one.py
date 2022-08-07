@@ -17,13 +17,9 @@ class Solution(object):
                 if digits[0]== 10:
                     digits[0]=0
                     digits.insert(0,1)
-                    
-            if 10 not in digits:
-                return digits
-            
-            if 10 in digits:
-                digits[-1]= digits[-1]-1
-                return self.plusOne(digits)
+
+            digits[-1]= digits[-1]-1
+            return self.plusOne(digits)
             
         
             
