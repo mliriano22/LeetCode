@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: int
         """
         profit=0
-        lowest= max(prices)
+        lowest= float('inf')
         
         for i in range(len(prices)):
             if prices[i]< lowest:
@@ -14,7 +14,6 @@ class Solution(object):
                 profit= prices[i]- lowest
             
         
-                
         return profit
    
                 
