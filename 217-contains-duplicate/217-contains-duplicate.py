@@ -5,13 +5,11 @@ class Solution(object):
         :rtype: bool
         """
         d={}
-        count=1
-        
-        
+        count=1  
         
         for i in nums:
-            if i not in d:
-                d[i]= count
-            elif i in d:
+            if i in d:
                 return True
+            elif i not in d:
+                d[i]= count
         return False
