@@ -5,19 +5,19 @@ class Solution(object):
         :rtype: List[int]
         """
       
-        answer=[] # the array we will return
+        answer=[]
         
-        left=1 #need to initialize with 1 for mulitplication purposes 
+        left=1 
         right=1
  
         
         for i in range(len(nums)):
-            answer.append(left) # first we append as to not include the first number then we can multiply
+            answer.append(left) 
             left =left*nums[i] 
             
             
-        for j in range(len(nums)-1,-1,-1): #backwards version of our previous loop
-            answer[j]=answer[j]*right # multiplies the correct indices in our answer array 
+        for j in range(len(nums)-1,-1,-1):
+            answer[j]=answer[j]*right 
             right= right*nums[j]
             
         return answer
