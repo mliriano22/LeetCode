@@ -10,9 +10,6 @@ class Solution(object):
         for i in range(len(nums)):
             print sum(nums[:i]), sum(nums[i+1:])
             if sum(nums[:i])==sum(nums[i+1:]):
-                if i == 0:
-                    return pivot
-                else:
                     pivot=i
                     return pivot
             
