@@ -4,14 +4,18 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        s=0
+        ls=0
         pivot=0
         
         for i in range(len(nums)):
-            if sum(nums[:i])==sum(nums[i+1:]):
-                pivot=i
+            if ls == sum(nums[i+1:]):
+                pivot= i
                 return pivot
+            ls= nums[i]+ls
             
         return -1
+            
+            
+            
           
         
