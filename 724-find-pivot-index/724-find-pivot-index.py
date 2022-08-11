@@ -5,10 +5,12 @@ class Solution(object):
         :rtype: int
         """
         ls=0
+        rs= sum(nums)
         pivot=0
         
         for i in range(len(nums)):
-            if ls == sum(nums[i+1:]):
+            rs= rs-nums[i]
+            if ls == rs:
                 pivot= i
                 return pivot
             ls= nums[i]+ls
