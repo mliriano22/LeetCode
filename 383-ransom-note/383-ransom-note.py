@@ -6,12 +6,29 @@ class Solution(object):
         :rtype: bool
         """
         d={}
+        od={}
         count=1        
         
         
         for i in ransomNote:
-            d[i]=ransomNote.count(i)
-            if d[i] > magazine.count(i):
+            if i not in d:
+                d[i]= count
+            elif i in d:
+                d[i]+=1
+                
+        for j in magazine:
+            if j not in od:
+                od[j]= count
+            elif j in od:
+                od[j]+=1
+        
+        for i in d:
+            if i not in od:
+                return False
+            elif d[i] > od[i]:
                 return False
         return True
+                
+        
+        
             
