@@ -11,7 +11,9 @@ class Solution(object):
         
         
         for i in ransomNote:
-            if i not in d:
+            if i not in magazine:
+                return False
+            elif i not in d:
                 d[i]= count
             elif i in d:
                 d[i]+=1
