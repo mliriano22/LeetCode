@@ -10,10 +10,7 @@ class Solution(object):
         
         
         for i in ransomNote:
-            if i not in d:
-                d[i]= count
-            elif i in d:
-                d[i]+= 1
+            d[i]=ransomNote.count(i)
             if d[i] > magazine.count(i):
                 return False
         return True
