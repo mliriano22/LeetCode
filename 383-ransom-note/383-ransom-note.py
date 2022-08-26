@@ -25,9 +25,7 @@ class Solution(object):
                 od[j]+=1
         
         for i in d:
-            if i not in od:
-                return False
-            elif d[i] > od[i]:
+            if d[i] > od[i]:
                 return False
         return True
                 
